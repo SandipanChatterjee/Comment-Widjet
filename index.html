@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        /* background: #000; */
+        /* color: #fff; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #comment-header {
+        width: 50%;
+        min-width: 100px;
+        min-height: 50px;
+        padding: 50px;
+      }
+      #comment-body {
+        width: 50%;
+        margin: 10px 0;
+        min-width: 100px;
+        min-height: 100px;
+        padding: 50px;
+      }
+      .input {
+        display: block;
+        width: 100%;
+        min-height: auto;
+        padding: 5px;
+        border-radius: 10px;
+        border: 2px solid #000;
+      }
+      .comments {
+        margin: 10px 0;
+        min-width: 50px;
+        min-height: 20px;
+        border: 1px solid #fff;
+      }
+      .btn {
+        margin-left: 5px;
+        margin-bottom: 5px;
+        padding: 5px;
+        float: right;
+        background-color: #3b5998;
+        color: #fff;
+        border-radius: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="comment-header">
+      <h2>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+        laborum?
+      </h2>
+      <input
+        type="text"
+        name=""
+        id="comment-box"
+        class="input"
+        placeholder="Add a comment.."
+      />
+      <br />
+      <button onclick="addComments()" class="btn">OK</button>
+    </div>
+    <div id="comment-body">
+      <div id="comment-list"></div>
+    </div>
+    <div style="display: flex; justify-content: center;">
+      <button onclick="viewArray()" class="btn">SUBMIT</button>
+    </div>
+    <script src="comment_widjet.js" />
+  </body>
+</html>
